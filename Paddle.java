@@ -59,8 +59,10 @@ public class Paddle extends Actor
      */
     public void act() 
     {  
-        muevete();
+        muevete();                
+    
     }
+    
     public void muevete()
     {
         if(Greenfoot.isKeyDown("left"))

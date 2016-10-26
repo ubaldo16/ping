@@ -69,12 +69,37 @@ public class Ball extends Actor
      */
     public void act() 
     {        
+        BreakoutWorld mundo = (BreakoutWorld) getWorld();
         setLocation(getX () + velX,  getY () + velY);
          if(isTouching( Paddle.class))
          {
               velX = -velX;
               velY = -velY;
          }
+         
+          if(getX() == 400)            //Condicion para cuando toca el extremo de la pared
+       {
+            velX = -velX;
+       }
+       
+       if(getX() == 0)
+       {
+            velX = -velX;
+       }
+       
+       if(getY() == 490)
+       {
+            velY = -velY;
+            setLocation(202,222);
+            mundo.newBall();
+       }
+       
+       if(getY() == 0)
+       {
+           velY = -velY;
+       }
+       
+       mundo.checkIfWon();
     }
     
     /**
