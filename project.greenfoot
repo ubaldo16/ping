@@ -1,5 +1,5 @@
 #Greenfoot properties
-#Wed Oct 26 09:08:08 CDT 2016
+#Wed Oct 26 20:12:18 CDT 2016
 class.Crab.superclass=
 editor.fx.0.height=700
 target2.width=80
@@ -55,7 +55,7 @@ target4.editor.x=290
 dependency3.type=UsesDependency
 target2.height=50
 target2.typeParameters=
-editor.swing.0.height=744
+editor.swing.0.height=0
 dependency7.type=UsesDependency
 target1.naviview.expanded=false
 version=2.8.0
@@ -71,14 +71,14 @@ target5.editor.y=22
 class.Hamster.superclass=
 target5.editor.x=493
 mainWindow.y=4
-editor.swing.0.y=-8
+editor.swing.0.y=0
 target5.showInterface=false
 mainWindow.x=170
-editor.swing.0.x=-8
+editor.swing.0.x=0
 dependency5.from=BreakoutWorld
 target2.name=Paddle
 readme.name=@README
-editor.swing.0.width=1382
+editor.swing.0.width=0
 target5.editor.height=582
 class.Explosion.superclass=
 editor.fx.0.width=700

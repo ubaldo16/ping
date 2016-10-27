@@ -77,6 +77,14 @@ public class Ball extends Actor
               velY = -velY;
          }
          
+         if(isTouching(Brick.class))     
+       {
+          
+           removeTouching(Brick.class);
+           velY = -velY;
+         
+       }
+         
           if(getX() == 400)            //Condicion para cuando toca el extremo de la pared
        {
             velX = -velX;
