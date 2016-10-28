@@ -51,6 +51,12 @@ public class Paddle extends Actor
         updateImage();
     }
     
+    public void Crece()
+    {
+       width= width + 30;
+        
+    }
+    
     ///////////////////// Methods ///////////////////////////////
 
     /**

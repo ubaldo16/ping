@@ -29,6 +29,8 @@ public class Ball extends Actor
     
     /** the amount of change in y during each act */
     private int velY = 2;
+    private Message message = null;
+    
     
     ////////////////// constructors /////////////////////
     
@@ -77,6 +79,14 @@ public class Ball extends Actor
               velY = -velY;
          }
          
+         if(isTouching(Brick.class))     
+       {
+          
+           removeTouching(Brick.class);
+           velY = -velY;
+         
+       }
+         
           if(getX() == 400)            //Condicion para cuando toca el extremo de la pared
        {
             velX = -velX;
@@ -87,12 +97,19 @@ public class Ball extends Actor
             velX = -velX;
        }
        
+      
+       
+       
        if(getY() == 490)
        {
-            velY = -velY;
-            setLocation(202,222);
-            mundo.newBall();
+          
+       velY = -velY;
+       setLocation(202,222);   
+       mundo.newBall();
+       removeTouching(Ball.class);
+       
        }
+       
        
        if(getY() == 0)
        {

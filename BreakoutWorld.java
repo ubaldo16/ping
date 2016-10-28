@@ -78,6 +78,9 @@ public class BreakoutWorld extends World
        /* increment the number of balls created */
       numBalls++;
       
+      
+      
+      
       /* check if used 3 or more */
       if (numBalls > 3)
       {
@@ -87,6 +90,7 @@ public class BreakoutWorld extends World
       /* create new ball and tell the user the number of balls created */
       else
       {
+         
          addObject(new Ball(), (WIDTH / 2), 222);
          message.setText("Ball " + numBalls);
       }
